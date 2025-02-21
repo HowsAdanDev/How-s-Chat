@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How's Chat - Login</title>
+    <title>Enter How's Chat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>How's Chat</h2>
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="login()">Login</button>
-        <button onclick="signup()">Sign Up</button>
+        <h2>Welcome to How's Chat</h2>
+        <input type="text" id="username" placeholder="Enter a username">
+        <button onclick="enterChat()">Join Chat</button>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
-    <script src="script.js"></script>
+    <script>
+        function enterChat() {
+            let username = document.getElementById("username").value.trim();
+            if (username === "") {
+                alert("Please enter a username!");
+                return;
+            }
+            localStorage.setItem("username", username);
+            window.location.href = "chat.html"; // Redirect to chat page
+        }
+    </script>
 </body>
 </html>
