@@ -1,6 +1,22 @@
 // Firebase Configuration
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
+    apiKey: "// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyChYRPlcJf8BZ1X0zzN1MFNjM8RpzMp464",
+  authDomain: "how-s-chat.firebaseapp.com",
+  projectId: "how-s-chat",
+  storageBucket: "how-s-chat.firebasestorage.app",
+  messagingSenderId: "742363933025",
+  appId: "1:742363933025:web:8f243b301917ba9f217d20"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);",
     authDomain: "YOUR_AUTH_DOMAIN",
     projectId: "YOUR_PROJECT_ID",
     storageBucket: "YOUR_STORAGE_BUCKET",
