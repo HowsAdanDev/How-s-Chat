@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background: #1a1a1a;
+    background: #121212;
     color: white;
     text-align: center;
 }
 
-.container {
+.container, .chat-container {
     margin-top: 100px;
 }
 
@@ -22,4 +22,24 @@ button {
     background: #007bff;
     color: white;
     cursor: pointer;
+}
+
+#chat-box {
+    width: 80%;
+    max-width: 400px;
+    height: 300px;
+    overflow-y: auto;
+    background: #333;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+p {
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    margin-bottom: 5px;
 }
